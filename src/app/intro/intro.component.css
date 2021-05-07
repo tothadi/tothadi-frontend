@@ -36,6 +36,11 @@ p {
   max-width: 80%;
 }
 
+#marketing p {
+  text-align: justify;
+  max-width: 100%;
+}
+
 br {
   content: "";
   display: block;
