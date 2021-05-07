@@ -4,6 +4,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PrevWorkComponent } from './prev-work/prev-work.component';
 import { IntroComponent } from './intro/intro.component';
 import { GreetingComponent } from './greeting/greeting.component';
+import { RdfComponent } from './rdf/rdf.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'prev-work', component: PrevWorkComponent },
   { path: 'intro', component: IntroComponent },
   { path: 'greeting', component: GreetingComponent },
+  { path: 'rdf', component: RdfComponent },
   { path: '', redirectTo: '/greeting', pathMatch: 'full'}
 ];
 

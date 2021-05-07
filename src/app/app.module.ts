@@ -13,6 +13,7 @@ import { PrevWorkComponent } from './prev-work/prev-work.component';
 import { IntroComponent } from './intro/intro.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { GreetingComponent } from './greeting/greeting.component';
+import { RdfComponent } from './rdf/rdf.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { GreetingComponent } from './greeting/greeting.component';
     PrevWorkComponent,
     IntroComponent,
     PagenotfoundComponent,
-    GreetingComponent
+    GreetingComponent,
+    RdfComponent
   ],
   imports: [
     BrowserModule,
