@@ -11,7 +11,13 @@ export class ContactComponent implements OnInit, OnDestroy {
 
   subjects = ['Prices', 'Job opportunity', 'Other'];
 
-  email!: Message;
+  email: Message = {
+    name: '',
+    address: '',
+    subject: '',
+    text: '',
+    copy: false
+  };
   sent_1 = 'Sending message...';
   sent_2 = 'Message succesfuly sent!';
   sent_3 = 'Please try again!';
@@ -27,7 +33,7 @@ export class ContactComponent implements OnInit, OnDestroy {
 
   sendMessage() {
     this.messageService.sendMessage(this.email).subscribe($status => {
-      if ($status) {
+      if ($status.status) {
         setTimeout(() => {
           this.sent = this.sent_2;
           this.status = 2;
@@ -53,7 +59,7 @@ export class ContactComponent implements OnInit, OnDestroy {
       name: '',
       address: '',
       subject: '',
-      message: '',
+      text: '',
       copy: false
     };
     this.sent = this.sent_1;

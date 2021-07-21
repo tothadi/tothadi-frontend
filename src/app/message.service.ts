@@ -6,8 +6,12 @@ export interface Message {
     name: String,
     address: String,
     subject: String,
-    message: String,
+    text: String,
     copy: Boolean
+}
+
+export interface MessageStatus {
+    status: Boolean;
 }
 
 @Injectable({
@@ -18,7 +22,7 @@ export class MessageService {
 
     constructor(private http: HttpClient) { }
 
-    public sendMessage(message: Message): Observable<Boolean> {
-        return this.http.post<Boolean>('api/message', message);
+    public sendMessage(message: Message): Observable<MessageStatus> {
+        return this.http.post<MessageStatus>('api/message', message);
     }
 }

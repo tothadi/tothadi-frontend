@@ -42,7 +42,7 @@
 
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea class="textarea form-control" id="message" required [(ngModel)]="email.message" minlength="20"
+                <textarea class="textarea form-control" id="message" required [(ngModel)]="email.text" minlength="20"
                     name="message" placeholder="Please type in your message" #messageInput="ngModel"></textarea>
                 <div class="help error" *ngIf="messageInput.invalid && messageInput.dirty">
                     Your message must be at least 20 characters long.

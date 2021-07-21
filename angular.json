@@ -38,7 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../tothadi/public/client",
+            "outputPath": "../tothadi/client",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -92,7 +92,8 @@
               "browserTarget": "tothadi-frontend:build:production"
             },
             "development": {
-              "browserTarget": "tothadi-frontend:build:development"
+              "browserTarget": "tothadi-frontend:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
