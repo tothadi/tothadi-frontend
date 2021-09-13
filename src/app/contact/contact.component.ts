@@ -19,7 +19,7 @@ export class ContactComponent implements OnInit, OnDestroy {
     copy: false
   };
   sent_1 = 'Sending message...';
-  sent_2 = 'Message succesfuly sent!';
+  sent_2 = 'Message succesfully sent!';
   sent_3 = 'Please try again!';
   status = 1;
 
@@ -44,7 +44,7 @@ export class ContactComponent implements OnInit, OnDestroy {
         }, 5000);
       } else {
         setTimeout(() => {
-          this.sent = this.sent_3;
+          this.sent = $status.message;
           this.status = 3;
         }, 2000);
         setTimeout(() => {

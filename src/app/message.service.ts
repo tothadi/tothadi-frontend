@@ -12,6 +12,7 @@ export interface Message {
 
 export interface MessageStatus {
     status: Boolean;
+    message: string;
 }
 
 @Injectable({

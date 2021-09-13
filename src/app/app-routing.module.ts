@@ -5,6 +5,7 @@ import { PrevWorkComponent } from './prev-work/prev-work.component';
 import { IntroComponent } from './intro/intro.component';
 import { GreetingComponent } from './greeting/greeting.component';
 import { RdfComponent } from './rdf/rdf.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'intro', component: IntroComponent },
   { path: 'greeting', component: GreetingComponent },
   { path: 'rdf', component: RdfComponent },
-  { path: '', redirectTo: '/greeting', pathMatch: 'full'}
+  { path: '', redirectTo: '/greeting', pathMatch: 'full' },
+  { path: '**', component: PagenotfoundComponent }
 ];
 
 @NgModule({

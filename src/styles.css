@@ -47,7 +47,7 @@ app-root {
   max-width: 975px;
 }
 
-app-contact, app-greeting, app-intro, app-prev-work, app-rdf {
+app-contact, app-greeting, app-intro, app-prev-work, app-rdf, app-pagenotfound {
   display: flex;
   order: 2;
   -ms-flex-order: 2;
